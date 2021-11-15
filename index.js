@@ -3,7 +3,6 @@ const app = express()
 const cors = require('cors')
 
 app.use( express.json())
-app.use( express.urlencoded() )
 app.use( cors() )
 
 app.get('/',async(req,res)=>{
@@ -11,7 +10,7 @@ app.get('/',async(req,res)=>{
 })
 
 app.post('/notifications',async(req,res)=>{
-    console.log({res: req.body})
+    console.log({req})
     res.json({msg: 'all ok'})
 })
 
