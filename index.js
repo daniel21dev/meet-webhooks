@@ -12,7 +12,9 @@ app.get('/',async(req,res)=>{
 
 app.post('/notifications',async(req,res)=>{
     console.log({res})
+    res.json({msg: 'all ok'})
 })
+
 const port = 8082
 app.listen(port,()=>{
     console.log(`app running on port ${port}`);
