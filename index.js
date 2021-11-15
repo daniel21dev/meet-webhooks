@@ -10,7 +10,7 @@ app.get('/',async(req,res)=>{
 })
 
 app.post('/notifications',async(req,res)=>{
-    console.log({req})
+    console.log({algo: req.headers})
     res.json({msg: 'all ok'})
 })
 
